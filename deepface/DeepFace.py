@@ -21,6 +21,9 @@ tf_version = int(tf.__version__.split(".")[0])
 if tf_version == 2:
 	import logging
 	tf.get_logger().setLevel(logging.ERROR)
+	
+def hello():
+	print("Hello!")
 
 def build_model(model_name):
 
